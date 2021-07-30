@@ -1,8 +1,8 @@
-// routes
-import routes from './routes/main';
-
 const express = require('express');
 const mongoose = require('mongoose');
+
+// Routes
+const routes = require('./routes/main');
 
 // Variables en Archivo .env
 require('dotenv').config();
@@ -36,7 +36,7 @@ const app = express();
 const port = process.env.PORT || 3000; // Defino un Puerto a Usar por el Server.
 
 // Make folder public be aviable as public content
-app.use(express.static(`${__dirname}/../public`));
+app.use(express.static(`${__dirname}/public/`));
 
 // setup routes
 app.use('/', routes);
