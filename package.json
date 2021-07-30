@@ -1,0 +1,16 @@
+{
+  "name": "grow-team",
+  "version": "1.0.0",
+  "description": "Server and apps to manage a garden.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muahlers/GrowTeam.git"
+  },
+  "author": "Michael Ahlers",
+  "license": "ISC"
+}
