@@ -1,3 +1,6 @@
+// routes
+import routes from './routes/main';
+
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -32,9 +35,11 @@ const app = express();
 // Defino un puerto para el server
 const port = process.env.PORT || 3000; // Defino un Puerto a Usar por el Server.
 
-app.get('/', (req, res) => {
-  res.send('Hello World! Grow is Coming!');
-});
+// Make folder public be aviable as public content
+app.use(express.static(`${__dirname}/../public`));
+
+// setup routes
+app.use('/', routes);
 
 // server start listening when bd connection is establish.
 mongoose.connection.on('connected', () => {
