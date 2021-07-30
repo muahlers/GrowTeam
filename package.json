@@ -12,5 +12,8 @@
     "url": "git+https://github.com/muahlers/GrowTeam.git"
   },
   "author": "Michael Ahlers",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
