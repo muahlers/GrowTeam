@@ -41,6 +41,11 @@ app.use(express.static(`${__dirname}/public/`));
 // setup routes
 app.use('/', routes);
 
+// Catch all other routes. Use() catch all that wasn't catch by the upper code.
+app.use((request, response) => {
+  response.status(404).json({ message: '404 - Not Found', status: '404' });
+});
+
 // server start listening when bd connection is establish.
 mongoose.connection.on('connected', () => {
   console.log('connected to mongo');

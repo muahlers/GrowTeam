@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    color: black;
+
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7777777777777777rem;
+}
+
+#wrapper {
+    margin: 0;
+    height: 100%;
+    background-color: grey;
+}
+
+#header, #main-content, #footer {
+  margin-left: 80px;
+  margin-right: 80px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+#header {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-color: blue;
+}
+
+#main-content {
+  height: 600px;
+  background-color: white;
+}
+
+#footer {
+  height: 100px;
+  background-color: lightblue;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
